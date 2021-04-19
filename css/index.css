@@ -3,12 +3,35 @@
 } */
 
 @font-face {
-  font-family: "Louis";
-  src: url("../font/Louis.ttf");
-  font-family: "Italic";
-  src: url("../font/italic.ttf");
   font-family: "Roboto";
   src: url("../font/Roboto.ttf");
+}
+
+@font-face {
+  font-family: "Nesans";
+  src: url("../font/Nesans.ttf");
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url("../font/italic.ttf");
+}
+
+@font-face {
+  font-family: "Times";
+  src: url("../font/TIMES.ttf");
+}
+
+a {
+  text-decoration: none;
+  font-size: 220%;
+  font-family: "Nesans";
+  color: black;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
 }
 
 html, body, p {
@@ -26,9 +49,13 @@ html, body, p {
 #left {
   background: linear-gradient(180deg, white, #00B5D6);
   /* background-color: white; */
-  text-align: justify;
   hyphens: auto;
   width: 55%;
+  display: flex;
+}
+
+.suivre { 
+  text-align: end;
 }
 
 h1 {
@@ -40,18 +67,70 @@ h1 {
 
 h4 {
   font-family: "Italic";
-  font-size: 200%;
+  font-size: 180%;
+}
+
+a:hover {
+  color: #007C93;
+}
+
+.img-college {
+  width: 100px;
+  background: url("../img/shrub.svg") no-repeat;
+  background-size: contain;
+  height: 80px;
+}
+
+.img-lycee {
+  width: 100px;
+  background: url("../img/tree.svg") no-repeat;
+  background-size: contain;
+  height: 80px;
 }
 
 .infos {
-  font-family: "Louis";
+  font-family: "Times";
   font-size: 150%;
+  text-align: justify;
 }
 
 #right {
   background: linear-gradient(180deg, white, #00B5D6);
   /* background-color: red; */
   width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.college, .lycee {
+  padding: 5%;
+}
+
+.ecole {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.college:hover > div {
+  width: 100px;
+  background: url("../img/shrub_bleu.svg") no-repeat;
+  background-size: contain;
+  height: 80px;
+}
+
+.lycee:hover > div {
+  width: 100px;
+  background: url("../img/tree_bleu.svg") no-repeat;
+  background-size: contain;
+  height: 80px;
+}
+
+img {
+  width: 80px;
+  margin-right: 2%;
 }
 
 #left, #right {
