@@ -17,14 +17,15 @@ html, body, p {
 }
 
 #all {
-  background-color: #00B5D6;
   display: flex;
   flex-direction: row;
-  padding: 100px 2% 100px 2%;
+  padding: 60px 2% 60px 2%;
+  background: linear-gradient(180deg, white, #00B5D6);
 }
 
 #left {
-  background-color: darkblue;
+  background: linear-gradient(180deg, white, #00B5D6);
+  /* background-color: white; */
   text-align: justify;
   hyphens: auto;
   width: 55%;
@@ -42,13 +43,14 @@ h4 {
   font-size: 200%;
 }
 
-p {
+.infos {
   font-family: "Louis";
-  font-family: 150%;
+  font-size: 150%;
 }
 
 #right {
-  background-color: red;
+  background: linear-gradient(180deg, white, #00B5D6);
+  /* background-color: red; */
   width: 45%;
 }
 
