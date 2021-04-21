@@ -49,6 +49,7 @@ html, body, p {
 #left {
   /* background: linear-gradient(180deg, white, #00B5D6); */
   background-color: #E2FAFF;
+  opacity: 50%;
   hyphens: auto;
   width: 55%;
 }
