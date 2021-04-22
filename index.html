@@ -8,12 +8,14 @@
   <title>Cité scolaire Albert Triboulet</title>
 </head>
 <body>
+  <!-- Je crée un div "all" comme à chaque début de page html, puis je sépare les deux parties de l'écran avec deux divs, "left" et "right". "left" sert à mettre les infos de la cité scolaire et "right" à choisir si l'utilisateur veut aller voir la page du collège albert triboulet ou bien du lycée albert triboulet. -->
   <div id="all">
     <div id="left">
       <h1>Cité scolaire Albert Triboulet</h1>
       <h4>Mais qu'est-ce donc?</h4>
       <p class="infos">La Cité Scolaire Albert TRIBOULET se situe dans le centre de Romans, ville de tradition manufacturière et commerciale, longtemps connue pour le travail du cuir et la chaussure de luxe. Elle porte le nom d’Albert Triboulet, grand résistant abattu en 1944 lors de la bataille du Vercors, professeur de Latin et maître d'éducation générale dans notre établissement qui à l’époque était un Collège classique.</p>
       <p id="button" class="suivre">Lire la suite <i class="fas fa-chevron-down"></i></p>
+      <!-- L'attribut id avec comme valeur "button" sert pour le js et le i class... sert à mettre le petit chevron vers le bas pour quelque chose de plus esthétique et ergonomique pour l'utilisateur (et aussi beaucoup plus compréhensible). Tous les p avec comme class "fin" servent aussi pour le js: ce sont tous les paragraphes qui s'afficheront quand l'utilisateur cliquera sur "Lire la suite". -->
       <p class="fin">Derrière son imposante façade qui longe l’avenue Gambetta, la Cité Scolaire Triboulet scolarise plus de 200 collégiens issus des quartiers historiques du centre ville et environ 1000 lycéens résidant dans tout le bassin de formation.</p>
 
       <p class="fin">« Permettre à tous les élèves de réussir leur scolarité et ne laisser personne au bord du chemin dans un établissement bienveillant et exigeant » c’est l’objectif de toute la communauté éducative engagée dans l’accompagnement du parcours de formation et d’orientation de chaque élève.</p>
@@ -33,7 +35,9 @@
       <p class="fin auteur">Anne-Sophie GRESELLE</p>
     </div>
     <div id="right">
+      <!-- Je commence par créer deux div pour séparer le collège du lycée. -->
       <div class="ecole college">
+        <!-- J'y ajoute des images d'arbre et d'arbuste pour plus d'ésthétique. -->
         <div class="img-college">
         </div>
         <li class="centre"><a href="accueil_college.html">Collège Albert Triboulet</a></li>
@@ -48,6 +52,7 @@
   <div class="fond">
 
   </div>
+  <!-- Js qui sert pour le "Lire la suite". -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
 </body>
