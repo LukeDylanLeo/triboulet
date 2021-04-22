@@ -47,9 +47,9 @@ html, body, p {
 }
 
 #left {
-  /* background: linear-gradient(180deg, white, #00B5D6); */
-  background-color: #E2FAFF;
-  opacity: 50%;
+  background: linear-gradient(180deg, white, #00B5D6);
+  /* background-color: white; */
+  opacity: 60%;
   hyphens: auto;
   width: 55%;
 }
@@ -101,12 +101,13 @@ a:hover {
 }
 
 #right {
-  /* background: linear-gradient(180deg, white, #00B5D6); */
-  background-color: #E2FAFF;
+  background: linear-gradient(180deg, white, #00B5D6);
+  /* background-color: white; */
   width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  opacity: 60%;
 }
 
 .college, .lycee {
