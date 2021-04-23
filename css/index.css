@@ -171,3 +171,10 @@ img {
 .auteur {
   text-align: right;
 }
+
+/* @media (max-width: 496px) {
+  #all {
+    flex-direction: row;
+    background-color: purple;
+  }
+} */

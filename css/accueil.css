@@ -110,7 +110,7 @@ html, body {
   font-size: 120%;
   font-family: "Roboto";
   color: #004653;
-  margin: 3%;
+  margin: 4%;
 }
 
 .accueil {
@@ -160,4 +160,8 @@ li {
   font-family: "Times";
   text-align: justify;
   hyphens: auto;
+}
+
+@media (max-width: 496px) {
+
 }
