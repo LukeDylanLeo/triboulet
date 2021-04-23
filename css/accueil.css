@@ -32,7 +32,6 @@ html, body {
 
 .head {
   background: linear-gradient(90deg, #46E0FC, #70E6FC, #A3EFFD, white, white, white, white);
-  /* background-color: red; */
   display: flex;
   flex-direction: row;
   height: 30vh;
@@ -61,12 +60,10 @@ html, body {
 
 #titre {
   width: 45%;
-  /* background-color: pink; */
 }
 
 #logo {
   padding-right: 5px;
-  /* background-color: darkblue; */
   width: 40%;
   display: flex;
   flex-direction: row;
@@ -86,7 +83,6 @@ html, body {
 }
 
 .logolycee {
-  /* background-color: forestgreen; */
   width: 15%;
 }
 
@@ -103,14 +99,41 @@ html, body {
 }
 
 .left {
-  background-color: purple;
+  background-color: #A7F1FF;
   width: 20%;
-  height: 80vh;
+  height: 100vh;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.menu-item {
+  font-size: 120%;
+  font-family: "Roboto";
+  color: #004653;
+  margin: 3%;
+}
+
+.accueil {
+  font-size: 140%;
+  font-weight: bolder;
+}
+
+.menu-item:hover {
+  color: #00090B;
+  text-shadow:
+  0 0 10px rgba(20, 215, 251, 1),
+  0 0 50px rgba(20, 215, 251, .8),
+  0 0 75px rgba(20, 215, 251, .6),
+  0 0 76px rgba(20, 215, 251, .4),
+  0 0 77px rgba(20, 215, 251, .5),
+  0 0 78px rgba(20, 215, 251, .4),
+  0 0 79px rgba(20, 215, 251, .3),
+  0 0 80px rgba(20, 215, 251, .2),
+  0 0 85px rgba(20, 215, 251, .1);
 }
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 li {
@@ -119,5 +142,22 @@ li {
 
 .right {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 80%;
+}
+
+.infos {
+  background-color: white;
+  padding: 2%;
+  margin: 4%;
+  border-radius: 20px 25px 0 20px;
+  box-shadow:2px 2px 5px #A3EFFD;
+}
+
+.info {
+  color: #004653;
+  font-size: 120%;
+  font-family: "Times";
+  text-align: justify;
+  hyphens: auto;
 }
