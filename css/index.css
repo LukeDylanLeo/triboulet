@@ -106,7 +106,7 @@ a:hover {
 }
 
 #right {
-  background: linear-gradient(180deg, white, #00B5D6);
+  background: linear-gradient(180deg, white, #46E0FC);
   /* background-color: red; */
   width: 40%;
   display: flex;
@@ -120,7 +120,7 @@ a:hover {
 }
 
 body {
-  background: linear-gradient(180deg, white, #00B5D6);
+  background: linear-gradient(180deg, white, #46E0FC);
   background-attachment: fixed;
 }
 

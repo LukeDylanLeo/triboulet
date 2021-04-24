@@ -43,21 +43,50 @@
 }
 
 .matieres {
-  background-color: lime;
+  background-color: #A3EFFD;
   text-align: justify;
   padding: 1.5%;
-  margin: 2%;
+  margin: 2.5%;
   hyphens: auto;
   width: 17%;
   height: 50vh;
+  border-radius: 12px;
 }
 
 .matieres h3 {
   color: #004653;
   font-family: "Rock";
+  text-align: center;
 }
 
 .matieres p {
   color: #004653;
   font-family: "Libertine";
+}
+
+.matieres img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+  width: 50%;
+  height: 30%;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  color: #004653;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  height: 5vh;
+  background-color: white;
+}
+
+button:hover {
+  color: black;
+  box-shadow: 1px 1px 12px #1A90CD;
 }
