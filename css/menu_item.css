@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Italic";
+  src: url("../font/italic.ttf");
+}
+
+@font-face {
+  font-family: "Nesans";
+  src: url("../font/Nesans.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto.ttf");
+}
+
+@font-face {
+  font-family: "Times";
+  src: url("../font/TIMES.ttf");
+}
+
+@font-face {
+  font-family: "Rock";
+  src: url("../font/Rock.otf");
+}
+
+@font-face {
+  font-family: "Libertine";
+  src: url("../font/LinLibertine.ttf");
+}
+
+* {
+  margin: 0;
+}
+
+.choix {
+  display: flex;
+  flex-direction: column;
+}
+
+.ligne1, .ligne2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.matieres {
+  background-color: lime;
+  text-align: justify;
+  padding: 1.5%;
+  margin: 2%;
+  hyphens: auto;
+  width: 17%;
+  height: 50vh;
+}
+
+.matieres h3 {
+  color: #004653;
+  font-family: "Rock";
+}
+
+.matieres p {
+  color: #004653;
+  font-family: "Libertine";
+}
