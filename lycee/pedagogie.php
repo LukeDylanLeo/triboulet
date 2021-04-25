@@ -1,3 +1,50 @@
+<?php
+$datas = [
+  "sciences" => [
+    "titre" => "Sciences",
+    "icone" => "science.svg",
+    "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "link" => "#",
+  ],
+  "social" => [
+    "titre" => "Sciences humaines",
+    "icone" => "social.svg",
+    "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "link" => "#",
+  ],
+  "litterature" => [
+    "titre" => "Littérature",
+    "icone" => "literature.svg",
+    "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "link" => "#",
+  ],
+  "langues" => [
+    "titre" => "Langues",
+    "icone" => "langues.svg",
+    "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "link" => "#",
+  ],
+  "eps" => [
+    "titre" => "Education physique & sportive",
+    "icone" => "sport.svg",
+    "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "link" => "#",
+  ],
+  "international" => [
+    "titre" => "Europe & International",
+    "icone" => "international.svg",
+    "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "link" => "#",
+  ],
+  "interdisciplinaire" => [
+    "titre" => "Activités interdisciplinaires",
+    "icone" => "other.svg",
+    "text" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "link" => "#",
+  ],
+];
+?>
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
@@ -16,52 +63,21 @@
       </div>
       <div class="right">
         <div class="choix">
-          <div class="ligne1">
-            <div class="matieres sciences">
-              <h3>Sciences</h3>
-              <img src="../img/science.svg" alt="Sciences">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <?php include '../button.php' ?>
+
+          <?php
+          foreach ($datas as $data) {?>
+            <div class="matieres">
+              <h3>
+                <?php echo $data["titre"]  ?>
+              </h3>
+              <img src="../img/<?php echo $data['icone'] ?>" alt="Image">
+              <p><?php echo $data['text'] ?></p>
+              <a href="<?php echo $data["link"] ?>">
+                <button type="button" name="button"><i class="fas fa-eye"></i> Voir plus</button>
+              </a>
             </div>
-            <div class="matieres scienceshumaines">
-              <h3>Sciences humaines</h3>
-              <img src="../img/social.svg" alt="Sciences humaines">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <?php include '../button.php' ?>
-            </div>
-            <div class="matieres litterature">
-              <h3>Littérature</h3>
-              <img src="../img/literature.svg" alt="Littérature">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <?php include '../button.php' ?>
-            </div>
-            <div class="matieres langues">
-              <h3>Langues</h3>
-              <img src="../img/langues.svg" alt="Langues">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <?php include '../button.php' ?>
-            </div>
-          </div>
-          <div class="ligne2">
-            <div class="matieres eps">
-              <h3>Education physique & sportive</h3>
-              <img src="../img/sport.svg" alt="EPS">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <?php include '../button.php' ?>
-            </div>
-            <div class="matieres Europeinternational">
-              <h3>Europe & international</h3>
-              <img src="../img/international.svg" alt="International">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <?php include '../button.php' ?>
-            </div>
-            <div class="matieres actinterdisciplinaires">
-              <h3>Activités interdisciplinaires</h3>
-              <img src="../img/other.svg" alt="Autre">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <?php include '../button.php' ?>
-            </div>
-          </div>
+          <?php }  ?>
+
         </div>
       </div>
     </div>

@@ -34,7 +34,8 @@
 
 .choix {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .ligne1, .ligne2 {
@@ -43,7 +44,8 @@
 }
 
 .matieres {
-  background-color: #A3EFFD;
+  /* background-color: #A3EFFD; */
+  background-color: #DBF9FF;
   text-align: justify;
   padding: 1.5%;
   margin: 2.5%;
@@ -51,6 +53,12 @@
   width: 17%;
   height: 50vh;
   border-radius: 12px;
+  opacity: 95%;
+  min-width: 150px;
+}
+
+.matieres:hover {
+  background-color: #A3EFFD;
 }
 
 .matieres h3 {
