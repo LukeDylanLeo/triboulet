@@ -36,49 +36,61 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.ligne1, .ligne2 {
-  display: flex;
-  flex-direction: row;
-}
-
-.matieres {
+.cartes {
   /* background-color: #A3EFFD; */
   background-color: #DBF9FF;
   text-align: justify;
   padding: 1.5%;
-  margin: 2.5%;
   hyphens: auto;
-  width: 17%;
-  height: 50vh;
   border-radius: 12px;
   opacity: 95%;
   min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.matieres:hover {
+.cartes:hover {
   background-color: #A3EFFD;
 }
 
-.matieres h3 {
+.cartes h3 {
   color: #004653;
   font-family: "Rock";
   text-align: center;
 }
 
-.matieres p {
+.cartes p {
   color: #004653;
   font-family: "Libertine";
 }
 
-.matieres img {
+.cartes img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 3%;
   width: 50%;
   height: 30%;
+}
+
+.articles p {
+  padding-top: 25px;
+}
+
+.articles {
+  width: 25%;
+  height: 30vh;
+  margin: 1.5%;
+}
+
+.matieres {
+  width: 17%;
+  height: 50vh;
+  margin: 2.5%;
 }
 
 button {
