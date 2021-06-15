@@ -56,7 +56,7 @@ $datas = [
   <h1 class="info generale">Infos générales: le lycée en bref</h1>
 </div>
 
-<div class="choix">
+<div class="choix-org">
 
 <?php
 foreach ($datas as $data) {?>
@@ -76,9 +76,9 @@ foreach ($datas as $data) {?>
 </div>
       </div>
     </div>
-    <footer>
-      <p></p>
-    </footer>
+
+    <?php include 'footer.html' ?>
+
   </div>
 </body>
 </html>

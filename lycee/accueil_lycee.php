@@ -8,22 +8,27 @@
 </head>
 <body>
   <div class="all">
-<?php include 'head.html'; ?>
+    <?php include 'head.html'; ?>
     <div class="content">
       <div class="left">
 
         <?php include 'menu.html'; ?>
       </div>
       <div class="right">
-<?php include "infos.html" ?>
+        <?php include "infos.html" ?>
         <div class="choix">
-
+          <div class="cdi">
+            <p><a href="#"> CDI en ligne: e-sidoc <a></p>
+          </div>
+          <div class="ent">
+            <p><a href="#"> ENT de la cité scolaire <a></p>
+          </div>
         </div>
       </div>
     </div>
-    <footer>
-      <p></p>
-    </footer>
+
+    <?php include 'footer.html' ?>
+    
   </div>
 </body>
 </html>

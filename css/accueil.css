@@ -111,7 +111,7 @@ html, body {
 }
 
 .menu-item {
-  font-size: 120%;
+  font-size: 122%;
   font-family: "Roboto";
   color: #004653;
   margin: 7%;
@@ -134,6 +134,10 @@ html, body {
   0 0 79px rgba(20, 215, 251, .3),
   0 0 80px rgba(20, 215, 251, .2),
   0 0 85px rgba(20, 215, 251, .1);
+}
+
+.menu-item:active {
+  color: #2B3BD5;
 }
 
 a {
@@ -168,4 +172,106 @@ li {
 
 @media (max-width: 496px) {
 
+}
+
+footer {
+  height: 25vh;
+  background: linear-gradient(90deg, #A3EFFD, #70E6FC, #46E0FC);
+  z-index: 2000;
+  box-shadow: 1px 3px 15px #1A90CD;
+  color: #004653;
+  opacity: 95%;
+}
+
+.footer-all {
+  display: flex;
+  flex-direction: row;
+}
+
+.gauche {
+  /* background-color: fuchsia; */
+  width: 30%;
+  height: 25vh;
+}
+
+.droite {
+  /* background-color: purple; */
+  width: 70%;
+  height: 25vh;
+}
+
+.gauche p, .droite p {
+  font-size: 100%;
+  padding-top: 10px;
+  margin: 7px;
+  padding-left: 20px;
+  font-family: "Roboto";
+}
+
+.footer-titre {
+  font-size: 120%;
+  margin: 10px;
+  padding-top: 7px;
+  padding-left: 20px;
+  font-family: "Roboto";
+  font-weight: lighter;
+}
+
+.gauche a, .droite a {
+  color: #004653;
+}
+
+.gauche a:hover, .droite a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.choix {
+  background-color: white;
+  padding: 2%;
+  margin: 0 4% 4% 4%;
+  border-radius: 20px;
+  opacity: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.choix p {
+  color: #004653;
+  font-size: 120%;
+  font-family: "Times";
+  text-align: justify;
+  hyphens: auto;
+}
+
+.cdi, .ent {
+  background-color: rgba(1, 240, 255, 0.1);
+  padding: 2% 5% 2% 5%;
+  margin: 0 4% 0 4%;
+  border-radius: 20px;
+}
+
+.cdi:hover, .ent:hover {
+  background-color: rgba(1, 240, 255, 0.3);
+}
+
+
+.cdi p a, .ent p a {
+  color: #004653;
+  font-weight: bolder;
+}
+
+.cdi a:hover, .ent a:hover {
+  color: #00090B;
+  text-shadow:
+    0 0 10px rgba(20, 215, 251, 1),
+    0 0 50px rgba(20, 215, 251, .8),
+    0 0 75px rgba(20, 215, 251, .6),
+    0 0 76px rgba(20, 215, 251, .4),
+    0 0 77px rgba(20, 215, 251, .5),
+    0 0 78px rgba(20, 215, 251, .4),
+    0 0 79px rgba(20, 215, 251, .3),
+    0 0 80px rgba(20, 215, 251, .2),
+    0 0 85px rgba(20, 215, 251, .1);
 }

@@ -32,7 +32,14 @@
   margin: 0;
 }
 
-.choix {
+.choix-matieres {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.choix-org {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

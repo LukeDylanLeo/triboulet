@@ -62,7 +62,7 @@ $datas = [
         <?php include 'menu.html'; ?>
       </div>
       <div class="right">
-        <div class="choix">
+        <div class="choix-matieres">
 
           <?php
           foreach ($datas as $data) {?>
@@ -81,8 +81,8 @@ $datas = [
         </div>
       </div>
     </div>
-    <footer>
-    </footer>
-  </div>
-</body>
-</html>
+
+    <?php include 'footer.html' ?>
+
+  </body>
+  </html>

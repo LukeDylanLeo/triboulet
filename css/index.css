@@ -24,7 +24,7 @@
 
 a {
   text-decoration: none;
-  font-size: 220%;
+  font-size: 2.8em;
   font-family: "Nesans";
   color: black;
 }
@@ -84,17 +84,17 @@ a:hover {
 }
 
 .img-college {
-  width: 100px;
+  width: 120px;
   background: url("../img/shrub.svg") no-repeat;
   background-size: contain;
-  height: 80px;
+  height: 100px;
 }
 
 .img-lycee {
-  width: 100px;
+  width: 120px;
   background: url("../img/tree.svg") no-repeat;
   background-size: contain;
-  height: 80px;
+  height: 100px;
 }
 
 .infos {
@@ -136,17 +136,17 @@ body {
 }
 
 .college:hover > div {
-  width: 100px;
+  width: 120px;
   background: url("../img/shrub_bleu.svg") no-repeat;
   background-size: contain;
-  height: 80px;
+  height: 100px;
 }
 
 .lycee:hover > div {
-  width: 100px;
+  width: 120px;
   background: url("../img/tree_bleu.svg") no-repeat;
   background-size: contain;
-  height: 80px;
+  height: 100px;
 }
 
 img {
